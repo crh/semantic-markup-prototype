@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DDB Help Desk</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DDB Help Desk Standort 3 Proptotype" />
+    <meta name="author" content="Christian Herlambang" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet/less" href="/app/assets/styles/less/with_semantic_gs.less" />
+    <link rel="profile" href="http://microformats.org/profile/hcard" />
+
+    <!-- le JavaScript -->
+    <script src="/vendor/less/js/less-1.3.0.min.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <hgroup>
+        <h1>Organization</h1>
+      </hgroup>
+    </header>
+
+    <nav></nav>
+    <article class="main">
+        <section class="organization">
+          <form class="editOrganization">
+            <fieldset>
+              <legend>
+                FIZ Karlsruhe
+              </legend>
+              <!-- TODO: remove Twitter Bootstrap(TW) classes-->
+              <!-- TODO: find microdata for annotating organization/company -->
+              <div class="control-group">
+                <label class="control-label" for="name">Name</label>
+                <div class="controls">
+                  <input type="text" name="name"  id="name" value="FIZ Karlsruhe" />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+        <aside>
+          <article class="members">
+            <header>
+              <h1>Members</h1>
+            </header>
+            <ul>
+              <li>
+                <section class="member">
+                  <!-- we use hcard microdata to sematically anotate a person -->
+                  <div class="vcard">
+                    <div class="fn n">
+                      <h4>
+                        <a class="url" href="http://github.com/abrahaj">
+                          <span class="given-name">Armand</span> 
+                          <span class="family-name">Brahaj</span> 
+                        </a>
+                      </h4>
+                    </div>
+                    <div class="nickname">abrahaj</div>
+                    <a class="email"
+                      href="mailto:armand.brahaj@fiz-karlsruhe.de">armand.brahaj@fiz-karlsruhe.de</a>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <section class="member">
+                  <div class="vcard">
+                    <div class="fn n">
+                      <h4>
+                        <a class="url" href="http://crh.github.com">
+                          <span class="given-name">Christian</span> 
+                          <span class="family-name">Herlambang</span> 
+                        </a>
+                      </h4>
+                    </div>
+                    <div class="nickname">crh</div>
+                    <a class="email"
+                      href="mailto:christian.herlambang@fiz-karlsruhe.de">christian.herlambang@fiz-karlsruhe.de</a>
+                  </div>
+                </section>
+              </li>
+            </ul>
+          </article>
+        </aside>
+    </article>
+
+    <footer>FIZ Karlsruhe - Copyright 2012</footer>
+
+    <!-- le JavaScript -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+  </body>
+</html>

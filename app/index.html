@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Single HTML, Two Stylesheets<</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Christian Herlambang" />
+    <link rel="stylesheet" href="/vendor/bootstrap/styles/bootstrap.css" />
+    <style>
+        html, body { height: 100% }
+        iframe { width: 100%; height: 100%; border: 1px solid black; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <hgroup>
+        <h1>Single HTML, Two Stylesheets</h1>
+      </hgroup>
+    </header>
+    <article class="row-fluid">
+        <section class="span6">
+            <a href="/app/index_with_bootstrap.html">Using Twitter Bootstrap</a>
+            <iframe seamless="true" src="/app/index_with_bootstrap.html"></iframe>
+        </section>
+        <aside class="span6">
+            <a href="/app/index_with_semantic_gs.html">Using Semantic Grid
+                System</a>
+            <iframe seamless="true" src="/app/index_with_semantic_gs.html"></iframe>
+        </aside>
+    </article>
+  </body>
+</html>
